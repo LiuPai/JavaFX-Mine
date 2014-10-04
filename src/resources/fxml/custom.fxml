@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import control.SpinField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:id="customPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+            fx:controller="control.CustomController">
+    <children>
+        <GridPane>
+            <children>
+                <Label text="%rowNumber" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                <SpinField fx:id="rowField" min="6" max="50" defaultValue="10" prefWidth="100.0"
+                           GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label text="%columnNumber" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                <SpinField fx:id="columnField" min="6" max="50" defaultValue="10" prefWidth="100.0"
+                           GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label text="%mineNumber" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                <SpinField fx:id="mineField" min="1" max="2490" defaultValue="10" prefWidth="100.0"
+                           GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <HBox GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3"
+                      GridPane.valignment="TOP">
+                    <children>
+                        <Button cancelButton="true" text="%cancel" onAction="#handleCancelAction"/>
+                        <Button defaultButton="true" text="%confirm" onAction="#handleConfirmAction"/>
+                    </children>
+                </HBox>
+            </children>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+            </columnConstraints>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+        </GridPane>
+    </children>
+</AnchorPane>

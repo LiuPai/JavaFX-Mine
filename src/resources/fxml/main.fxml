@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="control.MainController">
+  <center>
+    <VBox fx:id="mainPane">
+      <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+        <BorderPane fx:id="infoPane">
+        </BorderPane>
+        <BorderPane fx:id="boardPane">
+        </BorderPane>
+    </VBox>
+  </center>
+  <top>
+    <MenuBar fx:id="menuBar">
+      <menus>
+        <Menu text="%newGame">
+          <items>
+            <MenuItem onAction="#esayGame" text="%easy" />
+            <MenuItem onAction="#mediumGame" text="%medium" />
+            <MenuItem onAction="#hardGame" text="%hard" />
+            <MenuItem onAction="#customGame" text="%custom" />
+          </items>
+        </Menu>
+        <Menu text="%action">
+          <items>
+            <MenuItem onAction="#showMines" text="%showMines" fx:id="showMines" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </top>
+</BorderPane>

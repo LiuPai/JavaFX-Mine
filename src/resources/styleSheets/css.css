@@ -1,0 +1,59 @@
+.wait {
+    -fx-background-image: url("../images/wait.png");
+    -fx-background-size: 30;
+}
+.fine {
+    -fx-background-image: url("../images/fine.png");
+    -fx-background-size: 30;
+}
+.lose {
+    -fx-background-image: url("../images/lose.png");
+    -fx-background-size: 30;
+}
+.background {
+    -fx-background-color: #999;
+}
+.boardPane {
+    -fx-background-color: #999;
+}
+.number {
+    -fx-background-color: #999;
+}
+
+.exploded {
+    -fx-background-color: #C0C0C0;
+    -fx-background-image: url("../images/mine_exploded.png");
+    -fx-background-size: 30;
+}
+.flag {
+    -fx-background-image: url("../images/flag.png");
+    -fx-background-size: 30;
+}
+.flag_wrong {
+    -fx-background-color: #C0C0C0;
+    -fx-background-image: url("../images/flag_wrong.png");
+    -fx-background-size: 30;
+}
+.empty {
+    -fx-background-color: #999;
+}
+.mine_with_flag {
+    -fx-background-color: #C0C0C0;
+    -fx-background-image: url("../images/mine_with_flag.png");
+    -fx-background-size: 30;
+}
+.mine_with_flag_M {
+    -fx-background-color: #C0C0C0;
+    -fx-background-image: url("../images/mine_with_flag_M.png");
+    -fx-background-size: 30;
+}
+.mine_without_flag {
+    -fx-background-color: #C0C0C0;
+    -fx-background-image: url("../images/mine_without_flag.png");
+    -fx-background-size: 30;
+}
+.mine_without_flag_M {
+    -fx-background-color: #C0C0C0;
+    -fx-background-image: url("../images/mine_without_flag_M.png");
+    -fx-background-size: 30;
+}
